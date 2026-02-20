@@ -79,3 +79,9 @@ Who is right?
 
 #### Here is Mr. Nilo judging you: 
 ![Mr. Nilo](./public/Mr.%20Nilo.jpg)
+
+
+Some useful links:
+[Bcrypt](https://www.geeksforgeeks.org/python/hashing-passwords-in-python-with-bcrypt/)
+[Directives](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie)
+[Hashlib](https://www.geeksforgeeks.org/python/hashlib-module-in-python/)
