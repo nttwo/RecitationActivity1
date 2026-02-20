@@ -21,7 +21,6 @@ app = Flask(__name__, template_folder="public")
 @app.get("/feedback")
 def feedback():
     token = request.cookies.get("auth_token")
-    print("auth_token cookie:", request.cookies.get("auth_token"))
 
     if not validate_token(token):
         return redirect(url_for("login_page"))
@@ -91,7 +90,7 @@ def login():
 
     if "HttpOnly" in cookie_vals:
         http_only = True
-    max_ages = [directive for directive in cookie_vals if "Max-Age" in cookie_vals]
+    max_ages = [directive for directive in cookie_vals if directive.startswith("Max-Age=")]
     if len(max_ages) == 1:
         max_age = int(max_ages[0].split("=")[1])
 
