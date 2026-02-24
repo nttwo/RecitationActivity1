@@ -8,6 +8,6 @@ services:
     build: .
     environment:
       WAIT_HOSTS: mongo:27017
-      MONGO_DB: true
+      MONGO_DB: "true"
     ports:
       - '8080:8080'
